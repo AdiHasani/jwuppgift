@@ -1,0 +1,1 @@
+ReactDOM.render(React.createElement(form), document.getElementById('reactApp'))
