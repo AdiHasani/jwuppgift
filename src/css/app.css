@@ -1,0 +1,26 @@
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #DB5D4E;
+    text-align: center;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #DB5D4E;
+   text-align: center;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #DB5D4E;
+   text-align: center;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #DB5D4E;
+   text-align: center;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #DB5D4E;
+   text-align: center;
+}
+
+canvas {
+    border: 1px solid #DB5D4E;
+}
