@@ -1,19 +1,82 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Jay Way assigment</title>
-        <link rel="stylesheet" type="text/css" href="css/screen.css">
-        <link rel="stylesheet" type="text/css" href="css/app.css">
-    </head>
-    <body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/ico" sizes="48x48"> 
+    <link rel="stylesheet" type="text/css" media "screen" href="css/screen.css">
+    <link rel="stylesheet" type="text/css" media "screen" href="css/app.css">
+    <title>Assigment JW</title>
+  </head>
+  <body>
+    <div id="faqja">
 
-        <div id="content" data-shape='circle'></div>
-        <script src="react/react-0.14.7.js"></script>
-        <script src="react/react-dom-0.14.7.js"></script>
-        <script src="js/robot.js"></script>
-        <script src="js/app.js"></script>
+      <header>
+        <a class="logo" title="JayWay Assigment" href="index.html"><span>JayWay Assigment</span></a>
+        <div class="hero">
+          <h1>Robotprogrammering</h1>
+          <a class="btn" title="Kvadratiskt rum 10x10" href="rectangle.html">Kvadratiskt Rum</a>
+          <a class="btn2" title="Cirkulärt rum med radien 10 rutor" href="circle.html">Cirkulärt rum</a>
+        </div>
 
-    </body>
+      </header>
 
+      <nav>
+        <ul>
+          <li>
+            <a title="Contact Me" href="#">Contact Me</a>
+          </li>
+          <li>
+            <a title="About Me" href="index.html">About Me</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="app">
+        <aside>
+          <div id="reactApp" data-shape='circle'></div>
+        </aside>
+      </section>
+
+      <section class="robot">
+        <article>
+          <h2>Sätt x och y för att få robotens position</h2>
+          <p>Roboten förflyttar sig i rummet genom att tolka en sträng av kommandon på svenska:<br /><strong>V</strong> - Vänd åt vänster <strong>H</strong> - Vänd åt höger <strong>G</strong> - Gå framåt<br/><br/> Exempelsträng: <strong>VGGHGHGHGG</strong> <br/><br/>Det skall även gå att konfigurera roboten så den förstår kommandon på engelska:<br/><strong>L</strong> - Vänd åt vänster <strong>R</strong> - Vänd åt höger <strong>F</strong> - Gå framåt<br/><br/>Exempelsträng: <strong>LFFRFRFRFF</strong></p>
+        </article>
+      </section>
+
+      <section class="abt-me">
+        <aside>
+          <div class="content">
+            <img alt="I'm 33 years young" src="images/arrow-keys.svg" />
+            <h4>Father of two</h4>
+            <p> G = Gå framåt<br /> V = Vänd åt vänster <br /> H = Vänd åt höger<br /> Not implementet</p>
+          </div>
+        </aside>
+        <aside>
+          <div class="content">
+            <img alt="Love and Peace 4ever" src="images/arrow-keys.svg" />
+            <h4>Keyboar</h4>
+            <p> F = Move forward<br /> L = Turn left<br /> R = Turn right<br /> Not implementet</p>
+          </div>
+        </aside>
+        <blockquote>
+          <p class="quote">Adnan är mycket hjälpsam och har ofta ett leende till hands.</p>
+          <p class="credit"><strong>Annhild Månson</strong><br /> <em>Projektledare</em><br /> Skola-utbildnings förvaltning</p>
+        </blockquote>
+      </section>
+
+
+      <footer>				
+        <div class="content">
+          Made with <span class="heart">&hearts;</span> in Malmö &copy; <a title="Adnan Hasani" href="https://github.com/AdiHasani/jwuppgift" target="_blank">Adnan Hasani</a>
+        </div>
+      </footer>
+      <script src="react/react-0.14.7.js"></script>
+      <script src="react/react-dom-0.14.7.js"></script>
+      <script src="js/robot.js"></script>
+      <script src="js/app.js"></script>
+
+    </div>
+  </body>
 </html>

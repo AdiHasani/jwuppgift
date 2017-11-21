@@ -21,6 +21,11 @@
    text-align: center;
 }
 
+#reactApp {
+    text-align: center;
+    padding-top: 5px;
+}
+
 canvas {
     border: 1px solid #DB5D4E;
 }
