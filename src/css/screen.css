@@ -1,10 +1,620 @@
+/* CSS Document for Screens screen.css */
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px; 
-	font-weight: 300; 
-	color: #555555; 
-	margin:0; 
-	padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; 
+  font-weight: 300; 
+  color: #555555; 
+  margin:0; 
+  padding: 0;
 }
+
+#faqja {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  position: relative;
+}
+
+/* Text & Anchor */
+
+h1 {
+  margin: 0 0 1em 0; 
+  font-size: 2,5em; 
+  font-weight: 700;
+}
+h2 {
+  margin: 0 0 .5em 0; 
+  font-size: 1,6em; 
+  font-weight: 700; 
+  line-height: 1.1em;
+}
+h3 {
+  margin: 0 0 .5em 0; 
+  font-size: 1,3em; 
+  font-weight: 700;
+}
+h4 {
+  margin: 0 0 1.5em 0; 
+  font-size: 1em; 
+  font-weight: 700;
+}
+
+p {
+  margin:0 0 1em 0;
+}
+
+a {color: #007eff;}
+a:visited {color: #65b1ff;}
+
+a.btn {
+  font-size: 1.2em; 
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #ffffff;
+  padding: 4px 15px;
+  transition: background-color .5s;
+  margin: 3px;
+}
+a.btn2 {
+  font-size: 1.2em; 
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #ffffff;
+  padding: 4px 15px;
+  transition: background-color .5s;
+  margin: 3px;
+}
+a.btn:hover {
+  background-color: rgba(0,0,0,.3);
+}
+a.btn2:hover {
+  background-color: rgba(0,0,0,.3);
+}
+
+/* Header */
+
+header {
+  height: 430px; 
+  background: #cccccc url(../images/lart_1200.jpg) no-repeat center bottom; 
+  position: relative;}
+
+header a.logo {
+  z-index: 1;
+  position: absolute; 
+  display: block; 
+  width: 160px; 
+  height: 66px; 
+  background: url(../images/Jayway.png) no-repeat 0 0;
+  background-size: contain;
+  top: 15px;
+  left: 20px;
+}
+
+header a.logo span { display: none; }
+header div.hero { 
+  position: absolute; 
+  width: 42%;
+  top: 130px;
+  left: 60%;
+}
+header div.hero h1 { 
+  line-height: 1em;
+  margin: 0 0 30px 0;
+  color: #000000;
+}
+
+/* Section - All */ 
+
+section { padding: 0 30px;}
+section::after { content: ''; display: block; clear: both;}
+
+/* Section - Main */
+
+section.main { 
+  margin-top: 20px; 
+  margin-bottom: 30px; 
+  padding: 0;
+}
+section.main aside { 
+  width: 33%; 
+  float: left; 
+  text-align: center;
+}
+
+section.main .content {
+  margin: 15px;
+  background: no-repeat center top;
+  background-size: 85px 85px;
+  padding-top: 85px;	
+}
+
+section.main aside .content.twb { background-image: url(../images/coffee.svg); }
+section.main aside .content.abt-me { background-image: url(../images/brave.svg); }
+section.main aside .content.school { background-image: url(../images/whip_it.svg); }
+
+section.main aside h3 a {color: #000000; text-decoration: none;}
+section.main aside h3 a:hover {text-decoration: underline;}
+
+/* Section - Atmosfera and Robot */
+
+section.atmosfera {
+  background-color: #DB5D4E;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+
+section.atmosfera article {
+  padding: 0 20px 0 515px;
+  background: url(../images/Adnan.jpg) no-repeat 0 5px;
+  min-height: 225px;
+}
+
+section.robot {
+  background-color: #DB5D4E;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Section - About Me */
+
+section.abt-me {
+  background-color: #DDD8BA;
+  position: relative;
+}
+
+section.abt-me aside {
+  width: 30%;
+  float: left;
+  margin-right: 10px;
+}
+
+section.abt-me aside .content { padding: 30px 30px 20px 0; }
+
+section.abt-me aside .content img {
+  display: block;
+  margin-bottom: 15px;
+  width: 70%
+}
+
+section.abt-me aside .content h4 { margin-bottom: 0; }
+section.abt-me aside .content p { margin-bottom: .5em; }
+section.abt-me aside .content a {
+  display: inline-block;
+  color: #cc6633;
+  font-weight: 700;
+
+}
+
+section.abt-me blockquote {
+  margin: 0;
+  width: 32%;
+  color: #444444;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+}
+
+section.abt-me blockquote p {
+  margin: 30px 30px 20px 50px;
+}
+
+section.abt-me blockquote p.quot {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+section.abt-me blockquote p.credit {
+  color: #777777;
+  font-size: .9em;
+  margin-top: 0;
+  padding-left: 20px;
+  line-height: 1.3em;
+  position: relative;
+}
+
+section.abt-me blockquote::before {
+  content: '\201c';
+  color: #DB5D4E;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: 5em;
+  font-family: serif;
+}
+
+section.abt-me blockquote p.quote::after {
+  content: '\201d';
+  font-family: serif;
+}
+section.abt-me blockquote p.credit::before {
+  content: '\2014';
+  position: absolute;
+  top: -1;
+  left: 0;
+}
+
+/* Navigation */
+
+nav {
+  background-color: rgba(0,0,0,.65);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 50px 0 0 0;
+  width: 100%;
+}
+
+nav::after {
+  content: ''; display: block; clear: both;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+nav ul li:hover {
+  background-color: #000000;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 125px;
+  position: relative;
+}
+
+nav ul li a:visited { 
+  color: #ffffff; 
+}
+nav ul li a:hover {
+  background-color: #000000;
+}
+
+
+
+
+/* Positioning the Navigation */
+
+nav > ul {
+  padding-right: 50px;
+}
+
+nav > ul > li {
+  float: right;
+}
+nav > ul > li > a {
+  width: auto;
+  padding: 10px 20px 15px 20px;
+} 
+
+
+/* Footer */
+
+footer {
+  background: #ffffff url(../images/footer_1200.jpg) no-repeat left bottom; 
+  min-height: 140px;
+  font-size: .9em;
+  color: #999999;
+}
+footer .content {
+  display: inline;
+  margin-left: 130px;
+}
+
+footer .heart {
+  font-size: 1.6em;
+  color: #DB5D4E;
+}
+
+footer a {
+  text-decoration: none;
+  color: #777777;
+}
+footer a:visited {
+  color: #777777;
+}
+footer a:hover {
+  color: #000000;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+
+  /* Text */
+
+  h1 {
+    font-size: 2,1em;
+  }
+
+  /* Header */
+  header div.hero {
+    left: 50%;
+  }
+  header div.hero h1 {
+    margin-bottom: 20px;
+  }
+
+  /* Atmosfera */
+  section.atmosfera article {
+    padding-left: 400px;
+    background-size: 375px auto;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  /* Header */
+  header {
+    height: 300px;
+    background-image: url(../images/lart_825.jpg);
+  }
+  header div.hero {
+    left: 48%;
+    top: 120px;
+  }
+
+  /* Atmosfera */
+  section.atmosfera article {
+    padding-left: 325px;
+    background-size: 300px auto;
+  }
+
+  /* About Me */
+  section.abt-me blockquote p.quote {
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+  section.abt-me blockquote p.credit {
+    font-size: .8em;
+  }
+}
+
+
+@media screen and (max-width: 760px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+
+  a.btn { font-size: .9em;}
+
+  a.btn2 { font-size : .9em;}
+
+  /* Header */
+  header a.logo {
+    width: 145px;
+    height: 60px;
+  }
+  header div.hero {
+    left: 46%;
+    top: 140px;
+  }
+
+  /* Main */
+
+  section.main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  section.main aside div.content {
+    background-size: 55px 55px;
+    padding-top: 60px;
+  }
+
+  /* Section About Me */
+  section.abt-me aside div.content img {
+    width: 85%;
+  }
+
+  /* Navigation */
+  nav {
+    padding-top: 80px;
+  }
+  nav > ul {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  h1 {
+    font-size: 1em;
+  }
+  h3 {
+    margin-bottom: 0px;
+  }
+  a.btn { font-size: 0.8em;}
+  a.btn2 {font-size: 0.8em;}
+
+  /* Header */
+  header {
+    height: 160px;
+    background-image: url(../images/lart_625.jpg);
+    background-position: left top;
+  }
+  header a.logo {
+    width: 100%;
+    height: 66px;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0,0,0,.65);
+    background-size: 112px 46px;
+    background-position: 20px center;
+  }
+
+  header div.hero {
+    width: 300px;
+    top: 85px;
+    left: 54%;
+  }
+  header div.hero h1 {
+    margin-bottom: 10px;
+  }
+
+  /* Section - Main */
+
+  section.main aside {
+    width: 100%;
+    float: none;
+    text-align: left;
+  }
+
+  section.main aside div.content {
+    margin: 8px 20px 8px 0;
+    padding: 5px 0px 10px 85px;
+    background-size: 50px 50px;
+    background-position: 20px 5px;
+  }
+
+  /* Section - Atmosfera */
+
+  section.atmosfera article {
+    padding: 160px 20px 0px 0px;
+    background-size: 300px auto;
+    min-height: initial;
+  }
+
+  /* Section - About me */
+
+  section.abt-me aside {
+    width: 100%;
+    float: none;
+    margin: 0;
+    position: relative;
+  }
+  section.abt-me aside div.content {
+    padding: 20px 20px 20px 150px;
+  }
+  section.abt-me aside div.content p {
+    font-size: .9em;
+  }
+
+  section.abt-me aside div.content img {
+    display: inline-block;
+    width: 125px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+  }
+
+  section.abt-me blockquote {
+    margin: 0 20px 0 40px;
+    width: 90%;
+    padding: 1px 0px 20px 0px;
+    position: relative;
+  }
+  section.abt-me blockquote p.credit {
+    margin-bottom: 0;
+  }
+
+
+  /* Navigation */
+
+  nav {
+    position: static;
+    width: auto;
+    padding: 20px 15px;
+    background-color: #DB5D4E;
+  }
+  nav ul {
+    display: block;
+    position: static;
+  }
+  nav > ul {
+    padding: 0;
+  }
+  nav > ul > li {
+    float: none;
+    margin-top: 25px;
+  }
+  nav ul li:hover {
+    background: none;
+  }
+  nav ul li a {
+    width: auto;
+    display: block;
+    margin: 8px 10px;
+    padding: 8px 15px;
+    border: 1px solid rgba(255,255,255,.25);
+  }
+  nav ul li a:hover {
+    background-color: rgba(255,255,255,.2);
+  }
+
+
+  /* Footer */
+
+  footer div.content {
+    display: block;
+    margin-top: 15px;
+  }
+  footer div.content a {
+    margin: 0 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  /* Header */
+
+  header {
+    height: 110px;
+    background-image: url(../images/lart_425.jpg);
+  }
+
+  header a.logo {
+    height: 36px;
+    background: rgba(0,0,0,.65) url(../images/logo_small.png) no-repeat center center;
+    background-size: 126px 17px;
+  }
+
+  header div.hero {
+    width: 100%;
+    left: 0px;;
+    top: 46px;
+    text-align: center;
+  }
+
+  header div.hero h1 {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  header div.hero a.btn { 
+    padding: 2px 30px;
+    font-size: .8em;
+  }
+
+  /* Section - About me */
+
+  section.abt-me aside div.content {
+    padding: 140px 20px 20px 0px;
+  }
+  section.abt-me aside div.content img {
+    width: auto;
+    height: 100px;
+    top: 30px;
+  }
+  section.abt-me blockquote {
+    margin: 10px 40px 0px 20px;
+  }
+}
+

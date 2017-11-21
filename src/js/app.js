@@ -1,1 +1,1 @@
-ReactDOM.render(React.createElement(robot, {shape:document.getElementById('content').getAttribute('data-shape')}), document.getElementById('content'))
+ReactDOM.render(React.createElement(robot,{shape:document.getElementById('content').getAttribute('data-shape')}), document.getElementById('content'))
